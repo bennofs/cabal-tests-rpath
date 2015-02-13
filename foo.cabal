@@ -1,0 +1,14 @@
+name:           foo
+version:        0.1
+stability:      alpha
+build-type:     Simple
+cabal-version:  >=1.8
+Library
+  exposed-modules:  Data.Foo
+  build-depends: base
+
+Test-suite tests
+  Type:             exitcode-stdio-1.0
+  main-is:          Main.hs
+  hs-source-dirs:   tests
+  build-depends: base, foo
